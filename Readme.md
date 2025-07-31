@@ -23,7 +23,7 @@ pip install cricpy
 
 ## Quick Start
 
-```python
+``` python
 from cricpy.io import file_loader
 from cricpy.parsers import cricsheet_parser
 
@@ -43,7 +43,7 @@ for filename, match_data in matches:
     df['match_file'] = filename
     all_deliveries.append(df)
 
-# Combine into single DataFrame
+# Combine into a single DataFrame
 import pandas as pd
 all_matches_df = pd.concat(all_deliveries, ignore_index=True)
 ```
@@ -60,7 +60,7 @@ The parsed DataFrame contains the following columns:
 - `runs_total`: Total runs scored on that delivery
 - `runs_batter`: Runs scored by the batsman
 - `runs_extras`: Extra runs (wides, no-balls, byes, leg-byes)
-- `extras_type`: Type of extras if any
+- `extras_type`: Type of extras, if any
 - `dismissal`: Type of dismissal if a wicket fell
 - `fielder`: Fielder(s) involved in the dismissal
 
@@ -73,7 +73,6 @@ The parsed DataFrame contains the following columns:
 - **The Hundred**: 100 balls per side
 - **First-class Cricket**: Multi-day matches
 - **List A Cricket**: Limited overs cricket
-- Any other format in Cricsheet data
 
 ## Examples
 
@@ -150,8 +149,8 @@ If you use this package in your research, please cite:
 ```bibtex
 @software{cricpy,
   title = {cricpy: A Python package for parsing Cricsheet cricket data},
-  author = {Your Name},
-  year = {2024},
-  url = {https://github.com/yourusername/cricpy}
+  author = {Aalap Desai},
+  year = {2025},
+  url = {https://github.com/desaiaalap/cricpy}
 }
 ```
